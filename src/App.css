@@ -1,0 +1,393 @@
+/* Importation de la police 'Roboto' */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Styles globaux */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header__logo h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.header__button {
+  padding: 0.5rem 1.2rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header__button:hover {
+  background-color: #0056b3;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  padding: 2rem;
+}
+
+.menu {
+  background-color: #ffffff;
+  padding: 1rem;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 2rem;
+}
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__item {
+  padding: 0.75rem 1rem;
+  color: #333;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu__item:hover {
+  background-color: #f0f2f5;
+}
+
+.content {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  height: 80vh;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.chat-header {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+
+.chat-header img {
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+}
+
+.chat-header .close-window {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+.chat-header .close-window:hover {
+  color: #ccc;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.message {
+  max-width: 80%;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.ai-message {
+  align-self: flex-start;
+  background-color: #e9ecef;
+  color: #333333;
+  border-top-left-radius: 0;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: #ffffff;
+  border-top-right-radius: 0;
+}
+
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-top: 1px solid #e0e0e0;
+  background-color: #ffffff;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+  margin-right: 0.5rem;
+}
+
+.chat-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.send-button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+  padding: 1rem;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.footer__highlight {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Animations */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.video-container video {
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.container-animations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.headerIDE {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.codeIDE {
+  width: 80%;
+  padding: 12px;
+  font-size: 16px;
+  font-family: monospace;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  background-color: #f9f9f9;
+  margin-bottom: 15px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.run {
+  background-color: #01ad06;
+}
+
+.quit {
+  background-color: rgb(242, 89, 89);
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.run:hover {
+  background-color: #005c03;
+}
+
+.quit:hover{
+  background-color: rgb(139, 5, 5);
+}
+
+.subHeader {
+  font-size: 22px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styles pour le conteneur de l'éditeur et de la console */
+.editor-console-container {
+  display: flex;
+  gap: 20px; /* Espace entre l'éditeur et la console */
+  margin-bottom: 20px;
+}
+
+.codeIDE {
+  flex: 1;
+  height: 400px;
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Source Code Pro', monospace;
+  border-radius: 5px;
+  border: 1px solid #bdc3c7;
+  background-color: #f7f7f7;
+  resize: none; 
+  overflow: auto;
+}
+
+.console {
+  flex: 1;
+  height: 400px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  border-radius: 5px;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.output {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  white-space: pre-wrap;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .editor-console-container {
+    flex-direction: column;
+  }
+
+  .codeIDE, .console {
+    height: 300px;
+  }
+}
+
+.variableList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.variableItem {
+  padding: 8px;
+  margin-bottom: 5px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.noVariables {
+  color: #888;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .menu {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .container-animations {
+    flex-direction: column;
+  }
+}

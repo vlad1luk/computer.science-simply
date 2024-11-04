@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5bc1c7b2.css",
+    "main.js": "/static/js/main.8d04a65f.js",
+    "static/js/453.c4dda704.chunk.js": "/static/js/453.c4dda704.chunk.js",
+    "static/media/networksAnim.mp4": "/static/media/networksAnim.691c31a1415022e0871e.mp4",
+    "static/media/chat-gpt.png": "/static/media/chat-gpt.f3dd19509d6c7ba19b3b.png",
+    "static/media/private.mp4": "/static/media/private.2a04706fe34e9ed36935.mp4",
+    "index.html": "/index.html",
+    "main.5bc1c7b2.css.map": "/static/css/main.5bc1c7b2.css.map",
+    "main.8d04a65f.js.map": "/static/js/main.8d04a65f.js.map",
+    "453.c4dda704.chunk.js.map": "/static/js/453.c4dda704.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bc1c7b2.css",
+    "static/js/main.8d04a65f.js"
+  ]
+}
