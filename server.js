@@ -29,6 +29,8 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
+console.log('serveur');
+
 async function openai_req(question) {
   try {
     const completion = await openai.chat.completions.create({
