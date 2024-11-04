@@ -11,6 +11,8 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 const serverUrl = "http://localhost:3033/";
 const titre = "Computer Science Simply";
 
+console.log('commit à partir de vscode');
+
 async function fetchData(question) {
   const response = await fetch(`${serverUrl}question?question=${question}`, {
     method: "GET",
