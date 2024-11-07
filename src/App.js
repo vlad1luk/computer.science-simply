@@ -161,7 +161,6 @@ function App() {
         });
 
         const data = await response.json();
-        // setSaved(false);
         setOutput(data.output || data.error || "Unknown error");
       } catch (error) {
         setOutput("Error: " + error.message);
@@ -173,6 +172,9 @@ function App() {
     return (
       <div className="container">
         <div className="buttonContainer">
+          <button className="button run" onClick={runCode}>
+            Run Code
+          </button>
           <button className="button quit" onClick={quitIDE}>
             Quit IDE
           </button>
@@ -184,7 +186,6 @@ function App() {
             value={code}
             onChange={(e) => {
               setCode(e.target.value);
-              runCode();
             }}
             className="codeIDE"
           />
@@ -207,7 +208,6 @@ function App() {
     return (
       <nav className="menu">
         <ul className="menu__list">
-          {/* ouvrir la fenetre conversationnelle */}
           <li key={1} className="menu__item" onClick={() => setOpt(1)}>
             Poser une question
           </li>
