@@ -11,7 +11,6 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 const serverUrl = "http://localhost:3033/";
 const titre = "Computer Science Simply";
 
-console.log('commit à partir de vscode');
 
 async function fetchData(question) {
   const response = await fetch(`${serverUrl}question?question=${question}`, {
@@ -214,14 +213,9 @@ function App() {
           <li key={1} className="menu__item" onClick={() => setOpt(1)}>
             Poser une question
           </li>
-          <li key={2} className="menu__item">
-            Comprendre le fonctionnement NAT
-          </li>
           <li key={3} onClick={() => setOpt(3)} className="menu__item">
             JavaScript Compilateur
           </li>
-          <li className="menu__item">Calculatrice réseaux</li>
-          <li className="menu__item">Tester mes connaissances</li>
         </ul>
       </nav>
     );
@@ -238,6 +232,7 @@ function App() {
               <h2>
                 Bienvenue sur <i>{titre}</i>
               </h2>
+              <i><b>Des fonctionnalités à venir</b></i>
             </section>
           </main>
           <div className="container-animations">
