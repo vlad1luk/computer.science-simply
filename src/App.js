@@ -136,9 +136,12 @@ function App() {
     );
   };
 
-  const Console = ({output}) => {
+  const Console = ({output, setOutput}) => {
     return (
       <div className="console">
+        <button 
+        onClick={() => setOutput("")}
+        >Clear</button>
         <pre className="output">{output}</pre>
       </div>
     );
@@ -189,15 +192,15 @@ function App() {
             }}
             className="codeIDE"
           />
-          <Console output={output} />
+          <Console output={output} setOutput={setOutput}/>
         </div>
         
        
       </div>
     );
   };
-
-
+  
+  
   const opts = {
     1: <ChatWindow />,
     2: <ComprendreNat />,
