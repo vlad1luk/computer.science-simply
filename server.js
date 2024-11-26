@@ -10,14 +10,6 @@ const { OpenAI } = require("openai");
 // https://platform.openai.com/
 
 
-// const sandbox = {
-//   console: {
-//     log: (...args) => {
-//       sandbox.output.push(args.join(" "));
-//     },
-//   },
-//   output: [],
-// };
 
 function allowCors(res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
